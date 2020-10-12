@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: #fafafa; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__header{
+  object-fit: contain;
+  background-color: white;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__headerImage{
+  object-fit: contain;
+  margin: 10px;
+}
+
+.app__signUp{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 70%;
+  margin-left: 15%;
+  margin: 10%;
+  padding: 15px;
+}
+
+.app__modalImage{
+  margin: 10px;
+  object-fit: contain;
+  padding: 15px;
+}
+
+.app__header Button{
+  margin: 10px;
+}
+
+.app__signUp Input{
+  padding: 15px;
+}
+
+.app__signUp Button{
+  width: 50%;
+  margin-top: 15px;
+  margin-left: 25%;
+}
+
+.app__posts{
+  padding: 20px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app__signUp small{
+  margin-top: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__signinPage{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 80%;
+  margin: 15px;
 }
+
+.app__signIn{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 15%;
+  margin: 10%;
+  padding: 15px;
+}
+
+.app__signIn Button{
+  margin: 20px;
+}
+
+
+
