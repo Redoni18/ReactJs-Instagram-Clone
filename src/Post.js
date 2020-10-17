@@ -3,6 +3,8 @@ import './Post.css'
 import Avatar from "@material-ui/core/Avatar"
 import { db } from './firebase'
 import firebase from 'firebase'
+import { Button } from '@material-ui/core'
+import DeleteIcon from '@material-ui/icons/Delete';
 
 function Post({username, caption, imageUrl, postId, user}) {
 
@@ -32,12 +34,18 @@ function Post({username, caption, imageUrl, postId, user}) {
         setComment('');
     }
 
-
     return (
         <div className="post">
             <div className="post__header">
                 <Avatar className="post__avatar" alt="Redon" src="/static/images/avatar/1.jpg" />
-                <h3>{username}</h3> 
+                <div className="post__headerContent">
+                    <h3>{username}</h3>
+                </div>
+                <div className="post__headerButton">
+                    {username === user.displayName &&(<Button startIcon={<DeleteIcon />} variant="contained" onClick={Event => db.collection('posts').doc(postId).delete()}>
+                    </Button>
+                    )}
+                </div>
             </div>
 
             {/* image */}

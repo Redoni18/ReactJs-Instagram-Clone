@@ -179,7 +179,6 @@ function App() {
                 <p>Welcome to Instagram Clone!</p>
                 <p>This website only allows you to post pictures and comment on them</p>
                 <p>Login or Sign Up if you want to use the website</p>
-                <p>P.S <small>If you're Mark Zuckerberg, please dont sue me lol!</small></p>
                 <Button variant='contained' onClick={() => setOpenSignIn(true)}>Sign In</Button>
                 <Button variant='contained' onClick={() => setOpen(true)}>Sign Up</Button>
               </center>
